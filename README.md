@@ -1,1 +1,2 @@
-# BaekJun-Algorithm
+# BaekJun Algorithm
+ BaekJun Algorithm solve
