@@ -9,7 +9,9 @@
 첫째 줄부터 N번째 줄까지 차례대로 별을 출력한다.
 """
 
-x = input(int)
-for (i = 0; i < x; i++) {
+N = int(input())
 
-}
+for i in range(1, N+1):
+    for j in range(i):
+        print('*', end='')
+    print()

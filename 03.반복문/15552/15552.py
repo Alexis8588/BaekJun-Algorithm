@@ -21,10 +21,17 @@
 
 import sys
 
-T = int(input(''))
+T = int(sys.stdin.readline())
+
 for i in range(0, T):
-    A, B = sys.stdin.readline('').split()
+    A, B = sys.stdin.readline().split()
     A = int(A)
     B = int(B)
     sum = A + B
     print(sum)
+    
+""" case 2 """
+    
+for i in range(T):
+    a, b = map(int, sys.stdin.readline().split())
+    print(a + b)
