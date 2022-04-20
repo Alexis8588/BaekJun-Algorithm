@@ -10,10 +10,11 @@
 import sys
 
 N = int(input())
-arr = [N]
+arr = []
 
 for i in range(N):
-    arr[i] = map(int, sys.stdin.readline())
+    T = int(input())
+    arr.append(T)
 
 max = arr[0]
 min = arr[0]
@@ -23,3 +24,20 @@ for j in range(len(arr)):
     if (arr[j] < min):
         min = arr[j]
 print(f'{min} {max}')
+
+""" solve 1"""
+N = sys.stdin.readline() # 이게 숫자를 엔터 치기 전까지 입력하는건가?
+Num = list(map(int, input().split()))
+max = Num[0]
+min = Num[0]
+for i in Num:
+    if i > max:
+        max = i
+    if i < min:
+        min = i
+print(min, max, ned='')
+
+""" solve 2 내장 함수 이용"""
+N = sys.stdin.readline()
+num_list = list(map(int, input().split()))
+print(min(num_list), max(num_list), end='')
