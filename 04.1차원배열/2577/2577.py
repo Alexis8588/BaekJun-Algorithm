@@ -11,41 +11,50 @@
 첫째 줄에는 A × B × C의 결과에 0 이 몇 번 쓰였는지 출력한다. 마찬가지로 둘째 줄부터 열 번째 줄까지 A × B × C의 결과에 1부터 9까지의 숫자가 각각 몇 번 쓰였는지 차례로 한 줄에 하나씩 출력한다.
 """
 
+# A = int(input())
+# B = int(input())
+# C = int(input())
+# num = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+# N = A * B * C
+# for i in range(len(str(N))):
+#     i = int(i)
+#     if (i == 0):
+#         num[0] += 1
+#     if (i == 1):
+#         num[1] += 1
+#     if (i == 2):
+#         num[2] += 1
+#     if (i == 3):
+#         num[3] += 1
+#     if (i == 4):
+#         num[4] += 1
+#     if (i == 5):
+#         num[5] += 1
+#     if (i == 6):
+#         num[6] += 1
+#     if (i == 7):
+#         num[7] += 1
+#     if (i == 8):
+#         num[8] += 1
+#     if (i == 9):
+#         num[9] += 1
+# print(num[0])
+# print(num[1])
+# print(num[2])
+# print(num[3])
+# print(num[4])
+# print(num[5])
+# print(num[6])
+# print(num[7])
+# print(num[8])
+# print(num[9])
+
+""" solve """
 A = int(input())
 B = int(input())
 C = int(input())
-num = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+num = list(str(A * B * C))
 
-N = A * B * C
-for i in range(len(str(N))):
-    i = int(i)
-    if (i == 0):
-        num[0] += 1
-    if (i == 1):
-        num[1] += 1
-    if (i == 2):
-        num[2] += 1
-    if (i == 3):
-        num[3] += 1
-    if (i == 4):
-        num[4] += 1
-    if (i == 5):
-        num[5] += 1
-    if (i == 6):
-        num[6] += 1
-    if (i == 7):
-        num[7] += 1
-    if (i == 8):
-        num[8] += 1
-    if (i == 9):
-        num[9] += 1
-print(num[0])
-print(num[1])
-print(num[2])
-print(num[3])
-print(num[4])
-print(num[5])
-print(num[6])
-print(num[7])
-print(num[8])
-print(num[9])
+for i in range(10):
+    print(result.count(str(i)))
