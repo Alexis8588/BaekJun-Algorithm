@@ -57,4 +57,4 @@ C = int(input())
 num = list(str(A * B * C))
 
 for i in range(10):
-    print(result.count(str(i)))
+    print(num.count(str(i)))
